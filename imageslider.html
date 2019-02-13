@@ -1,0 +1,100 @@
+<html>
+<head> 
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="imageslider.css" rel="stylesheet"> 
+   </head>
+<body>
+
+ <nav class="navbar navbar">
+  <div class="container-fluid">
+  <div class="logo">
+  <img src="logo.jpg" style="width: 68px;float: left;"/> 
+    <h2> lamborghini </h2> 
+  </div>
+      <ul class="nav navbar-nav css" >
+        <li ><a href="#">Motor sports</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Models</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Urus</a></li>
+            <li><a href="#">Huracán</a></li>
+            <li><a href="#">Aventador</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right css1">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+
+  </div>
+</nav>
+
+<div class="slideshow-container">
+
+<div id="imgdisp">
+
+<img id="img1" src="lambo.jpg" alt="img1" width="100%"/>
+
+</div>
+
+<a  class="prev" id="prev" onclick="prev()">&#10094;</a>
+<a  id="next" class="next" onclick="next()">&#10095;</a>
+
+</div>
+
+</body>
+<script> 
+var slider = [
+  { "text":"IMAGE1", "imgsrc":"lambo.jpg" },
+  { "text":"IMAGE2", "imgsrc":"lambo2.jpg" },
+  { "text":"IMAGE3", "imgsrc":"lambo3.jpg" },
+  { "text":"IMAGE4", "imgsrc":"lambo4.jpg" },
+  { "text":"IMAGE5", "imgsrc":"lambo5.jpg" }
+  ];
+
+console.log(slider);
+console.log(slider[0].imgsrc);
+var i=0,imgvalue;
+
+function prev(){
+i--;
+console.log(i);
+if(i == 0){
+document.getElementById("prev").removeAttribute("onclick");
+document.getElementById("next").setAttribute("onclick", "next()");
+}
+
+imgvalue = slider[i].imgsrc;
+console.log(imgvalue);
+document.getElementById('img1').className = "fadeOut";
+	setTimeout(function(){
+		document.getElementById("img1").src=imgvalue;
+		document.getElementById('img1').className = "fadeIn";
+	 }, 50);
+}
+
+function next(){
+i++;
+if(i== slider.length-1){
+document.getElementById("next").removeAttribute("onclick");
+document.getElementById("prev").setAttribute("onclick","prev()");
+}
+
+imgvalue = slider[i].imgsrc;
+console.log(imgvalue);
+document.getElementById('img1').className = "fadeOut";
+ setTimeout(function(){
+	document.getElementById("img1").src=imgvalue;
+	document.getElementById('img1').className = "fadeIn";
+ }, 50);
+}
+</script>
+</html>
