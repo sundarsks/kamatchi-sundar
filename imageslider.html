@@ -7,50 +7,119 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link href="imageslider.css" rel="stylesheet"> 
+   
    </head>
-<body>
+<body onload="myFunction()" data-spy="scroll" data-target=".navbar" data-offset="50">
 
- <nav class="navbar navbar">
+<nav class="stroke navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
-  <div class="logo">
-  <img src="logo.jpg" style="width: 68px;float: left;"/> 
-    <h2> lamborghini </h2> 
-  </div>
-      <ul class="nav navbar-nav css" >
-        <li ><a href="#">Motor sports</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Models</a>
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+    <div class="logo">
+		<img src="logo.jpg" style="width: 68px;float: left;"/> 
+		<a href="imageslider.html"> <h2> Lamborghini </h2> </a>
+      </div>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+           <ul class="nav navbar-nav css" >
+        <li ><a href="#section1"  >Motor sports </a></li>
+        <li><a href="#section3"  >About</a></li>
+        <li><a href="#section2" >Store</a></li>    
+		<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown"  href="#">Models</a>
           <ul class="dropdown-menu">
             <li><a href="#">Urus</a></li>
             <li><a href="#">Huracán</a></li>
             <li><a href="#">Aventador</a></li>
           </ul>
         </li>
-        <li><a href="#">Store</a></li>
-        <li><a href="#">About</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right css1">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
-
+      </div>
+    </div>
   </div>
-</nav>
-
+</nav>    
+ 
 <div class="slideshow-container">
-
-<div id="imgdisp">
-
-<img id="img1" src="lambo.jpg" alt="img1" width="100%"/>
-
+	<div id="imgdisp">
+		<img id="img1" src="lambo.jpg" alt="img1" width="100%"/>
+		<a  class="prev" id="prev" onclick="prev()">&#10094;</a>
+		<a  id="next" class="next" onclick="next()">&#10095;</a>
+	</div>
 </div>
 
-<a  class="prev" id="prev" onclick="prev()">&#10094;</a>
-<a  id="next" class="next" onclick="next()">&#10095;</a>
+<div id="section1" >
+	<h1 class="LAMBORGHINIACCADEMIA" >Motor Sports</h1>
+	<h3 class="LAMBORGHINIACCADEMIA" > LAMBORGHINI ACCADEMIA </h3>
+	<p class="LAMBORGHINIACCADEMIA" >Lamborghini Accademia believes in a simple principle: a hands-on approach is the best way of learning something.
+	This is why the aim of the Accademia is to make sure its participants spend as much time as possible at the wheel, be it on the racetrack, on snow or on ice. All its courses guarantee excellent results in learning terms, thanks to the consolidated experience of our instructors in the racing field.
+	With programs organized all around the world, from Australia to the United States, the schedule is more exhilarating than ever and is divided between the Track Accademia, where you can out the power of Lamborghinis to the test on some of the most famous race tracks in the world, and the Winter Accademia, a unique opportunity to experience a pure adrenalin rush by driving a Huracán and Aventador on ice and snow.Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!
+    </p> 
+
+	<h3 class="LAMBORGHINISUPERTROFEO" >LAMBORGHINI SUPER TROFEO</h3>
+	<p class="LAMBORGHINISUPERTROFEO" >The Lamborghini Super Trofeo is the one-make championship organized by Lamborghini Squadra Corse. The series involves exclusively Huracán Super Trofeo Evo model cars in 3 continental series: Europe, Asia, and North America. The new format for the Middle East championship will make its debut in 2019, and it is contended in two 3-race rounds. The three continental series all have a common format: 6 double races, each 50 minutes long, on the world’s most prestigious circuits, completed by a World Final that decrees the Lamborghini world champions.</p>
+
+	<h3 class="GTCUSTOMERRACING" >GT CUSTOMER RACING</h3>
+	<p class="GTCUSTOMERRACING" >Unlike the Super Trofeo, the GT3 is a category raced in championships open to different constructors. Automobili Lamborghini competes with over 20 customer teams who have chosen the Huracán GT3 EVO as their racing car. The Gran Turismo championships are held all over the world: from the IMSA WeatherTech SportsCar Championship in the US to the Asian championships SuperGT, Asian Le Mans Series and Blancpain GT World Challenge Asia, as well as the main European series, including the Blancpain GT World Challenge Europe, Adac GT Master, British GT Championship, Campionato Italiano GT and International GT Open.</p>
+</div>
+<div id="section3" >
+		<h1 class="aboutTitle"> About </h4>
+		<p class="aboutDesc" >Automobili Lamborghini S.p.A. (Italian: [lamborˈɡiːni] (About this soundlisten)) is an Italian brand and manufacturer of luxury sports cars and SUVs based in Sant'Agata Bolognese and tractors Lamborghini Trattori in Pieve di Cento, Italy. The company is owned by the Volkswagen Group through its subsidiary Audi.
+		Ferruccio Lamborghini, an Italian manufacturing magnate, founded Automobili Ferruccio Lamborghini S.p.A. in 1963 to compete with established marques, including Ferrari. The company gained wide acclaim in 1966 for the Miura sports coupé, which established rear mid-engine, rear wheel drive as the standard layout for high-performance cars of the era. Lamborghini grew rapidly during its first decade, but sales plunged in the wake of the 1973 worldwide financial downturn and the oil crisis. The firm's ownership changed three times after 1973, including a bankruptcy in 1978. American Chrysler Corporation took control of Lamborghini in 1987 and sold it to Malaysian investment group Mycom Setdco and Indonesian group V'Power Corporation in 1994. In 1998, Mycom Setdco and V'Power sold Lamborghini to the Volkswagen Group where it was placed under the control of the group's Audi division.
+		New products and model lines were introduced to the brand's portfolio and brought to the market and saw an increased productivity for the brand. In the late 2000s, during the worldwide financial crisis and the subsequent economic crisis, Lamborghini's sales saw a drop of nearly 50 percent.
+		Lamborghini produces sports cars and V12 engines for offshore powerboat racing. Lamborghini currently produces the V12-powered Aventador and the V10-powered Huracán along with the Urus SUV powered by a twin-turbo V8 engine.
+        Manufacturing magnate Italian Ferruccio Lamborghini founded the company in 1963 with the objective of producing a refined grand touring car to compete with offerings from established marques such as Ferrari. The company's first models, such as the 350 GT, were released in the mid-1960s and were noted for their refinement, power and comfort. Lamborghini gained wide acclaim in 1966 for the Miura sports coupé, which established rear mid-engine, rear wheel drive as the standard layout for high-performance cars of the era.
+        Lamborghini grew rapidly during its first ten years, but sales plunged in the wake of the 1973 worldwide financial downturn and the oil crisis. Ferruccio Lamborghini sold ownership of the company to Georges-Henri Rossetti and René Leimer and retired in 1974. The company went bankrupt in 1978, and was placed in the receivership of brothers Jean-Claude and Patrick Mimran in 1980. The Mimrans purchased the company out of receivership by 1984 and invested heavily in the company's expansion. Under the Mimrans' management, Lamborghini's model line was expanded from the Countach to include the Jalpa sports car and the LM002 high performance off-road vehicle.
+        The Mimrans sold Lamborghini to the Chrysler Corporation in 1987. After replacing the Countach with the Diablo and discontinuing the Jalpa and the LM002, Chrysler sold Lamborghini to Malaysian investment group Mycom Setdco and Indonesian group V'Power Corporation in 1994. In 1998, Mycom Setdco and V'Power sold Lamborghini to the Volkswagen Group where it was placed under the control of the group's Audi division. New products and model lines were introduced to the brand's portfolio and brought to the market and saw an increased productivity for the brand Lamborghini. In the late 2000s, during the worldwide financial crisis and the subsequent economic crisis, Lamborghini's sales saw a drop of nearly 50 percent. > 
+		Lamborghini Urus As of the 2018 model year, Lamborghini's automobile product range consists of three model lines, two of which are mid-engine two-seat sports cars while the third one is a front engined, all-wheel drive SUV.[3] The V12-powered Aventador line consists of the LP 740–4 Aventador S coupé and roadster.[4] The V10-powered Huracán line currently includes the all-wheel-drive LP 610-4 coupé and spyder, the low cost rear-wheel-drive LP 580-2 coupé and spyder and the most powerful, track oriented LP 640-4 Performanté coupé and spyder.[5] With the intention of doubling its sales volume by 2019, Lamborghini also added an SUV named Urus in its line-up which is powered by a twin-turbo V8 engine and utilises a front engine, all-wheel drive layout.
+     	Marine engines L900 marine engine Motori Marini Lamborghini produces a large V12 marine engine block for use in World Offshore Series Class 1 powerboats. A Lamborghini branded marine engine displaces approximately 8,171 cc (8.2 L) and outputs approximately 940 hp (700 kW).Lamborghini motorcycle
+		In the mid-1980s, Lamborghini produced a limited-production run of a 1,000 cc sports motorcycle. UK weekly newspaper Motor Cycle News reported in 1994 – when featuring an example available through an Essex motorcycle retailer – that 24 examples were produced with a Lamborghini alloy frame having adjustable steering head angle, Kawasaki GPz1000RX engine/transmission unit, Ceriani front forks and Marvic wheels. The bodywork was plastic and fully integrated with front fairing merged into fuel tank and seat cover ending in a rear tail-fairing. The motorcycles were designed by Lamborghini stylists and produced by French business Boxer Bikes.
+	   In contrast to his rival Enzo Ferrari, Ferruccio Lamborghini had decided early on that there would be no factory-supported racing of Lamborghinis, viewing motorsport as too expensive and too draining on company resources.[12] This was unusual for the time, as many sports car manufacturers sought to demonstrate the speed, reliability, and technical superiority through motorsport participation. Enzo Ferrari in particular was known for considering his road car business mostly a source of funding for his participation in motor racing. Ferruccio's policy led to tensions between him and his engineers, many of whom were racing enthusiasts; some had previously worked at Ferrari. When Dallara, Stanzani, and Wallace began dedicating their spare time to the development of the P400 prototype, they designed it to be a road car with racing potential, one that could win on the track and also be driven on the road by enthusiasts.[13] When Ferruccio discovered the project, he allowed them to go ahead, seeing it as a potential marketing device for the company, while insisting that it would not be raced. The P400 went on to become the Miura. The closest the company came to building a true race car under Lamborghini's supervision were a few highly modified prototypes, including those built by factory test driver Bob Wallace, such as the Miura SV-based "Jota" and the Jarama S-based "Bob Wallace Special".
+		</p>
 
 </div>
+<div id="section2"> 
+<h1 > Store </h4>
+	<div class="clear"> </div>
+	<div class="store">
+		<h4>FALL-WINTER 2018-19 COLLECTION</h4>
+		<p>Design, technology, performance. Automobili Lamborghini’s DNA is reinterpreted in the 2018-2019 Fall-Winter collection. Sophisticated details enrich a comfortable and cool experience. The ultimate that technology and design have to offer for an extraordinary lifestyle to wear every day. </p>
+		<h4> SHOP BY CAR </h4>
+		<p>The Drawings of the Centro Stile and the entire identity of Lamborghini supercars in a line of Automobili Lamborghini garments.</p>
+	</div>
+	<div class="firstHalf">
+		<img class="img1" src="lamboStore.jpg" alt="img1" width="100%" >
+		<span id="imageText1"> Models lamborghini</span>
+	</div>
 
-</body>
+	<div class="secondHalf"> 
+		<img class="img1" src="lamboStore1.jpg" alt="img1" width="100%" >
+		<span id="imageText2"> Online Store </span>
+	</div>
+			<div class="followus">
+		<h4 class="titlefollowus"> Follow us </h4>
+		<a href="#"><i class="fa fa-dribbble" style="padding-left: 10px;margin-top: 13px;"></i></a> 
+		<a href="#"><i class="fa fa-twitter" style="padding-left: 10px"></i></a>  
+		<a href="#"><i class="fa fa-linkedin" style="padding-left: 10px"></i></a>  
+		<a href="#"><i class="fa fa-facebook" style="padding-left: 10px"></i></a> 
+		<a href="#"><i class="fa fa-instagram" style="padding-left: 10px"></i></a> 
+		<a href="#"><i class="fa fa-linkedin" style="padding-left: 10px"></i></a> 
+		<a href="#"><i class="fa fa-youtube" style="padding-left: 10px"></i></a> 
+		<a href="#"><i class="fa fa-wechat" style="padding-left: 10px"></i></a> 
+	</div>
+</div>
+
+
+ 
+ <button onclick="topFunction()" id="myBtn" title="Go to top">	&#8593;</button>
 <script> 
 var slider = [
   { "text":"IMAGE1", "imgsrc":"lambo.jpg" },
@@ -62,15 +131,25 @@ var slider = [
 
 console.log(slider);
 console.log(slider[0].imgsrc);
-var i=0,imgvalue;
+var i = 0,imgvalue;
+
+function myFunction() {
+ document.getElementById("prev").setAttribute('class','hide');
+}
 
 function prev(){
-i--;
-console.log(i);
-if(i == 0){
-document.getElementById("prev").removeAttribute("onclick");
+	i--;
+	console.log(i);
+	//debugger;
+	
+if(i == 0 ){
+document.getElementById("prev").setAttribute('class','hide');
 document.getElementById("next").setAttribute("onclick", "next()");
 }
+if(i > 1 && i < slider.length-1) {
+document.getElementById("next").setAttribute('class','show');
+}
+
 
 imgvalue = slider[i].imgsrc;
 console.log(imgvalue);
@@ -83,8 +162,12 @@ document.getElementById('img1').className = "fadeOut";
 
 function next(){
 i++;
+if(i == 1) {
+document.getElementById("prev").setAttribute('class','show');
+} 
+
 if(i== slider.length-1){
-document.getElementById("next").removeAttribute("onclick");
+document.getElementById("next").setAttribute('class','hide');
 document.getElementById("prev").setAttribute("onclick","prev()");
 }
 
@@ -96,5 +179,22 @@ document.getElementById('img1').className = "fadeOut";
 	document.getElementById('img1').className = "fadeIn";
  }, 50);
 }
+  
+  window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 </script>
+</body>
 </html>

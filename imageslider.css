@@ -1,12 +1,20 @@
+html {
+	scroll-behavior: smooth;
+}
 h2 {
     font-family: Edwardian Script ITC;
     font-style: italic;
     font-size: 40px;
     font-weight: bold;
-    margin: 13px 0 20px 20px;
+    margin: 0 auto;
     float: left;
-	color: grey
+	color: yellow;
+	padding:15px;
   }
+   h2:hover {
+	   color:white;
+   }
+  
   	body {
 		background-color: black;
 		 }
@@ -22,7 +30,7 @@ h2 {
 		 }
 		 .css a
 		 {
-			 	color:grey;
+			 	color:yellow;
 			 
 		 }
 		 		 .css1
@@ -36,22 +44,21 @@ h2 {
 		 }
 		 .css1 a
 		 {
-			 	color:grey;
+			 	color:yellow;
+				  font-size: 25px;
+				
 			 
 		 }
 		 .dropdown-menu{    min-width: 195px;}
 		 .dropdown-menu > li > a{
 			 font-size: 30px; 
 		 }
-		 .nav .open>a:focus
-		 {
-			 background-color:black; 
-		 }
 		 
-		 	.prev, .next {
-	  cursor: pointer;
+		 
+		 	#prev, #next {
+	  cursor: pointer; 
 	  position: absolute;
-	  top: 50%;
+	     top: 50%;
 	  width: auto;
 	  padding: 16px;
 	  margin-top: -22px;
@@ -63,12 +70,12 @@ h2 {
 
 	}
 
-		.next {
+		#next {
 			right: 0;
 			border-radius: 3px 0 0 3px;
 		}
 
-		.prev:hover, .next:hover {
+		#prev:hover, #next:hover {
 			background-color: rgba(0,0,0,0.8);
 		}
 		
@@ -80,4 +87,220 @@ h2 {
 .fadeOut {
     opacity:0;
 }	
+
+#section1{
+	background: black;
+	 background-image: url("lamboTrack.jpg");
+	 background-repeat: no-repeat;
+	 background-size: 100%;
+	color:white;
+	padding: 2em;
+	text-align:justify
+}
+
+h3{
+	color: red;
+	transition: width 2s;
+}
+
+#section2{
+	background: black;
+	padding: 1em;
+		color:#fff;
+	
+}
+#section3 {
+	background: black;
+	padding: 1em;
+	color:white;
+	
+}
+   .aboutDesc{
+	   padding: 1em;
+	    background-image: url("aboutbg.jpg");
+	background-repeat: no-repeat;
+	 background-size: 100%;
+	 text-align: justify;
+	 
+	 
+   }
+
+.firstHalf{
+	width: 50%;
+	float: left;
+	opacity:0.5;
+	transform: scale(0.99);
+	transition: all 0.5s;
+	
 		
+}
+
+	.firstHalf:hover  {
+		opacity:1;
+		transform: scale(1);
+		transition: all 0.5s;
+		cursor: pointer;
+		}
+		.firstHalf:hover #imageText1 {
+				color:black;
+		}
+	
+	
+	
+.secondHalf{
+    width: 50%;
+	float: left;
+	opacity:0.5;
+	transform: scale(0.99);
+	transition: all 0.5s;
+	position:relative;
+
+}
+	.secondHalf:hover {
+		opacity:1;
+		transform: scale(1);
+		transition: all 0.5s;
+		cursor: pointer;
+	}
+	 
+	 .secondHalf:hover #imageText2 {
+				color:black;
+		}
+	
+#imageText1{
+		position:absolute;
+		z-index:1;
+		color:white;
+		margin-left: 24.5%;
+    top: 50%;
+	font-weight: bold;
+	font-size: 35px;
+	} 
+	
+	
+	 #imageText2{
+		position:absolute;
+		z-index:1;
+		color:white;
+		margin-left: 38%;
+    top: 50%;
+	font-weight: bold;
+	font-size: 35px;
+	 
+	}
+
+	.followus{
+	 display: inline-block;
+	 float:left;
+	  margin-left: 531px;
+	  
+	}
+	
+	.titlefollowus{
+		display: inline-block;
+			 float:left;
+			 color: yellow;
+		
+	}
+	
+  
+
+  .nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: black;
+	color:white;
+}
+
+	.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+	}
+
+	.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	}
+	nav ul li a,
+	nav ul li a:after,
+	nav ul li a:before {
+  transition: all .5s;
+}
+		nav.stroke ul li a,
+	nav.fill ul li a {
+	position: relative;
+}
+		nav.stroke ul li a:after,
+	nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+ 
+nav.stroke ul li a:hover:after {
+  width: 100%;
+  }
+
+.store {
+    padding: 2em;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+     color:white;
+}
+ 
+ #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: yellow;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.clear{
+	clear: both;
+} 
+
+ h1{
+	 color: yellow;
+ }
+ 
+ .hide{
+	 display:none;
+ }
+ .show{
+	 display:block;
+ }
+
+@media (min-width: 768px){
+	.navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 5px;
+
+}
+}
