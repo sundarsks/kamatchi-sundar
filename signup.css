@@ -1,0 +1,107 @@
+
+  h2{ font-family: Edwardian Script ITC;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 auto;
+    float: left;
+	color: yellow;
+	
+  }
+   h2:hover {
+	   color:white;
+   }
+   
+     h1 {
+    font-family: Edwardian Script ITC;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: bold;
+    float: left;
+	color: yellow;
+	padding:15px;
+	text-align:center;
+  }
+   h1:hover {
+	   color:white;
+   }
+
+
+body {
+	background-image: url("signup.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	margin-top: 50px;
+	
+} 
+
+
+.divpad{
+	padding:0px, 100px;
+	
+}
+
+.radiofemale {
+	padding:0px 48px;
+}
+input[placeholder]{
+	  font-family:"Times New Roman", Times, serif;;
+	  font-size: 15px;
+	  font-weight: bold;
+	  
+}
+
+
+select{
+		color:black;
+	  width: 100%;
+	  font-family:"Times New Roman", Times, serif;
+	  height:  29px;
+	  font-size: 15px;
+		
+		  
+}
+label {
+	color:white;
+	 	  font-family:"Times New Roman", Times, serif;
+	  	  font-size: 20px;
+	}
+.styled-select {
+    height:  29px;
+   overflow: hidden;
+   width: 50%;
+   font-weight: bold;
+   
+   
+}
+ 
+ .semi-square {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+.blue    {
+	background-color: #3b8ec2;
+	}
+	
+	#submitbtn{
+	border-radius: 8px;
+	 background-color: #ddd;
+	 font-weight: bold;
+	 margin-bottom: 20px;
+	 box-shadow: 1px 1px;
+	 }
+	#submitbtn:hover{
+	background-color: orange;
+	color: white;
+	}
+
+
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

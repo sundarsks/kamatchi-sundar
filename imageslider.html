@@ -10,6 +10,27 @@
    
    </head>
 <body onload="myFunction()" data-spy="scroll" data-target=".navbar" data-offset="50">
+<button >Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="./loginsuccess.html">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="signinLogo.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+       <input type="text" id="userName" placeholder="Enter Username" name="uname" required>
+      <input type="password" id="password" placeholder="Enter Password" name="psw" required>
+       </div>
+<div class="container">	   
+      <button id="submit" onclick="loginValidation()" >Login</button>
+	  <button id="cancel" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
 
 <nav class="stroke navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
@@ -40,11 +61,16 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right css1">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="#" onclick="nextpage()" ><span class="glyphicon fa fa-question-circle"></span> Ask Me</a></li>
+        <li><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
       </div>
     </div>
+	
+
+</div>
+
+
   </div>
 </nav>    
  
@@ -195,6 +221,55 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+function nextpage(){
+window.location.href = "./signup.html";
+}
+
+
+
+
+var user = [
+    { "userName":"Admin", "passWord":"admin@123" }
+    ];
+
+
+function loginValidation() {
+
+var usrName = document.getElementById('userName').value;
+var usrPassword = document.getElementById('password').value;
+
+console.log(usrName);
+console.log(usrPassword);
+
+if(usrName == "" && usrPassword == "") {
+		alert("Please enter userName or passWord");
+			document.getElementById('userName').style.borderColor = "red";
+			document.getElementById('password').style.borderColor = "red";
+			return false;
+} 
+debugger;
+
+for(var i=0; i<user.length; i++){
+	console.log(user[i].userName);
+	if(user[i].userName == usrName && user[i].passWord == usrPassword) {
+		return success();
+	} else {
+		var x = false;
+	}
+}
+alert("Invalid User Name or passWord");
+}
+ function success() {
+	 window.location.href = "./loginsuccess.html";
+	 return false;
+ }
+ 
+ 
+ 
+ 
+
+
 </script>
 </body>
 </html>
