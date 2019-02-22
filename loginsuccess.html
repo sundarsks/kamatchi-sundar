@@ -1,5 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="loginsuccess.css" rel="stylesheet"> 
 </head>
+<body> 
+
+<form onload="retrievedata()" > 
+
+<div class="col-md-12 table-responsive"> 
+<h2> Lamborghini </h2>
+<button id="submitbtn" type="button" class="btn btn-default" onclick="logout()" > Log Out</button>
+ <table class="table ">
+	<thead>
+		<tr id="rowId">
+			<th> First name </th>
+			<th> Last Name </th>
+			<th> Email </th>  
+			<th> Mobile Number </th>  
+			<th> Model </th>  
+		</tr>
+  <thead>
+	<tbody  id="tableDetails">
+	</tbody>
+ </table>
+  </div>
+   
+</form>
+</body>
+<script>
+var storagekey = localStorage.length;
+console.log(storagekey);
+var display="";
+for(var i=0; i<storagekey; i++)
+{
+	var val =  i.toString();
+	var getvalue = JSON.parse(localStorage.getItem(val));	
+
+  display += "<tr><td>"+getvalue.fName+"</td><td>"+getvalue.lName+"</td><td>"+getvalue.eId+"</td><td>"+getvalue.mobNumber+"</td><td>"+getvalue.option1+"</td><td>";
+}
+document.getElementById("tableDetails").innerHTML = display;
+
+function retrievedata(){
+debugger;
+var table = document.getElementById("tableDetails");
+		var rowFirstName = document.getElementById('firstName').value;
+		var rowLastName  =  document.getElementById('lastName').value;
+		var rowEmail  =  document.getElementById('email').value;
+		var rowMobile  =  document.getElementById('mobNumber').value;
+		var rowModel  =  document.getElementById('option1').value;
+		
+
+if (localStorage.getItem(storagekey) != null) {
+	var display="";
+var display="";
+for(var i=0; i<storagekey; i++)
+{
+	var val =  i.toString();
+	var getvalue = JSON.parse(localStorage.getItem(val));	
+	
+  display += "<tr><td>"+getvalue.fName+"</td><td>"+getvalue.lName+"</td><td>"+getvalue.eId+"</td><td>"+getvalue.mobNumber+"</td><td>"+getvalue.rowModel+"</td></tr>";
+}
+document.getElementById("tableDetails").innerHTML = display;
+
+}
+}
+	function logout(){
+	 window.location.href = "./imageslider.html";
+	}
+</script>
+
 </html>

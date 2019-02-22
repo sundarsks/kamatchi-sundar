@@ -1,4 +1,6 @@
-
+html {
+		scroll-behavior: smooth;
+}
   h2{ font-family: Edwardian Script ITC;
     font-style: italic;
     font-size: 40px;
