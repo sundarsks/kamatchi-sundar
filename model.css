@@ -1,0 +1,68 @@
+html {
+	scroll-behavior: smooth;
+}
+h1{
+	 color: yellow;
+ 
+ } 
+h2 {
+    font-family: Edwardian Script ITC;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 auto;
+    float: left;
+	color: yellow;
+	padding:15px;
+  }
+   h2:hover {
+	   color:white;
+   }
+   
+    	body {
+		background-color: black;
+		 }
+
+		
+		 
+#urus{
+	background: black;
+	 background-image: url("lambo5.jpg");
+	 background-repeat: no-repeat;
+	 background-size: 100%;
+	color:white;
+	padding: 2em;
+	text-align:justify;
+	margin-top: 20px;
+	}
+	
+	video{
+	margin-top: 20px;
+	}
+
+	a{
+	 
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 auto;
+    float: left;
+	color: yellow;
+	padding:15px;
+	
+	}
+	
+	a:hover {
+	color:white;
+	}
+
+	#hurican{
+	background: black;
+	 background-image: url("signup.jpg");
+	 background-repeat: no-repeat;
+	 background-size: 100%;
+	color:white;
+	padding: 2em;
+	text-align:justify;
+	margin-top: 20px;
+	}

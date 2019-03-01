@@ -24,10 +24,9 @@ h2 {
 		 {
 			 margin-top:15px;
 			 font-family: Edwardian Script ITC;
-    font-style: italic;
-    font-size: 40px;
-
-    font-weight: bold; 
+			font-style: italic;
+			font-size: 40px;
+			font-weight: bold; 
 		 }
 		 .css a
 		 {
@@ -289,7 +288,8 @@ nav.stroke ul li a:hover:after {
 
  h1{
 	 color: yellow;
- }
+ 
+ } 
  
  .hide{
 	 display:none;
